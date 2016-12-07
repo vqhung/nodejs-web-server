@@ -42,11 +42,17 @@ app.get('/', (request, response) => {
     pageTitle: 'Home Page',
     welcomeMessage: 'Welcome to my website'
   });
-})
+});
 
 app.get('/about', (request, response) => {
   response.render('about.hbs',{
     pageTitle: 'About Page'
+  });
+});
+
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+    pageTitle: 'Projects'
   });
 })
 
